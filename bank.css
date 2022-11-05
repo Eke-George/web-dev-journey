@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+body{
+    display: flex;
+    padding: 10px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg,cyan,blue);
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 5px;
+    
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    margin: 10px;
+    color: rgb(20, 20, 160);
+    font-weight: bold;
+}
+.container .title span::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    background: linear-gradient(120deg,cyan,blue);
+    width: 28px;
+    left: 0;
+    bottom: 0;
+    
+}
+.user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px;
+}
+#reg_form .user-details .input-box{
+    width: calc(50% - 20px);
+    margin-bottom: 15px;
+   
+}
+#reg_form .user-details .input-box .details{
+     font-weight: bold;
+     margin-bottom: 5px;
+     display: block;
+}
+#reg_form .user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid blue;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 3px;
+    transition: all 0.5s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: rgb(22, 77, 98);
+
+}
+
+#reg_form .button{
+    height: 45px;
+}
+#reg_form .hey input{
+    background: linear-gradient(180deg,cyan,blue);
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    line-height: 45px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+#reg_form .hey input:hover{
+    background: linear-gradient(360deg,cyan,blue);
+}
+.name{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 5px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+}
+#name{
+    height: 200%;
+    padding-left: 2%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+#password{
+    height: 200%;
+    padding-left: 2%;
+    border-radius: 5px;
+    border: none;
+    outline: none
+}
+
+.password{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 5px;
+    margin-bottom: 10%;
+    
+}
+label{
+    color: white;
+    position: relative;
+    top: 47%;
+}
+.sign-btn{
+    float: right;
+    width: 15%;
+    border: none;
+    background: rgb(14, 14, 83);
+    color: white;
+    height: 36px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.createacc{
+    border-radius: 4px;
+    width: 25%;
+    border: none;
+    background: rgb(14, 14, 83);
+    color: white;
+    height: 36px;
+    cursor: pointer;
+}
+#signin-ui{
+    background: blue;
+    width: 70%;
+    height: auto;
+    padding: 5%;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* border-radius: 10px; */
+}
+#signin-ui h4{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-style: double;
+    color: rgb(3, 3, 41);
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+}
+#transcation-ui{
+    background-color: blue;
+    width: 60%;
+    height: auto;
+    padding: 4%;
+    color: white;
+    font-weight: bolder;
+    font-style: italic;
+}
+.trans{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#transcation-ui h4{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-style: dashed;
+    color: rgb(3, 3, 41);
+    text-align: center;
+    margin-bottom: 5%;
+    font-weight: bolder;
+    font-size: 25px;
+}
+#transcation-ui button{
+    float: right;
+    border: none;
+    width: 15%;
+    height: auto;
+    background-color: rgb(14, 14, 83);
+    color: white;
+    font-weight: bold;
+}
+#incorrect-ui{
+    text-align: center;
+    color: red;
+    margin-bottom: 2%;
+}
+#transactionMessage-ui{
+    margin-top: 2%;
+    text-align: center;
+    color: rgb(14, 14, 83);
+    margin-bottom: 2%;
+}
+#exit-ui{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    
+}

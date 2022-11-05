@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bank.css">
+</head>
+<body>
+<div class="container">
+  <div class="title"> <span></span> Registration Form</div>
+        <form action="#" style="display: block;" id="reg_form">
+            
+            <div class="user-details">
+              <div class="input-box">
+                    <span class="details">Username</span>
+                    <input type="text" placeholder="Enter Your Username" id="createusername" required>
+                </div>
+            
+                <div class="input-box">
+                    <span class="details">Amount</span>
+                    <input type="number" placeholder="Enter Amount" id="createamount" required>
+                </div>
+            
+              
+               <div class="input-box">
+                    <span class="details">Password</span>
+                    <input type="password" placeholder="Enter Your Password" id="createpassword" required>
+                </div>
+               <div class="input-box">
+                    <span class="details">Address</span>
+                    <input type="text" placeholder="Enter Your Current Address" id="Address" required>
+                </div>
+               <div class="input-box">
+                    <span class="details">Date of Birth</span>
+                    <input type="date" placeholder="Enter Your Password" id="birth" required>
+                </div>
+               <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="tel" placeholder="Enter Your Phone Number" id="tel" required>
+                </div>
+            </div>
+                
+
+                <div class="hey" >
+                <input type="submit" value="Register" class="button" >
+                </div>
+            </div>
+            
+        </form>
+</div>
+  
+
+
+    <!-- the second form begins here -->
+    
+      <form id="signin-ui" style="display: none;">
+        <h4>Sign-in</h4>
+        <div class="name">
+          <label for="name">Name</label>
+          <input type="text" id = "name" onkeydown="em()">
+        </div>
+        <div class="password">
+          <label for="password">Password</label>
+          <input type="password" id = "password">
+      </div>
+      <div id="incorrect-ui" style="display: none;">
+        Incorrect Password, Try Again, You will be banned after 4 attempts.
+      </div>
+      <div id="exit-ui" style="display: none;">
+        Thank you for Banking with us, Sign-in if you want perform another Transcation
+      </div>
+        <button class="sign-btn">Sign in</button>
+        
+      </form>
+
+      <!-- <div id="incorrect-ui" style="display: none;">
+        Incorrect Password, Try Again, You will be banned after 4 attempts.
+      </div> -->
+
+      <div id="banned-ui" style="display: none;">
+        You have tried 4 times, and you are now banned from using this service
+      </div>
+
+      <form id="transcation-ui" style="display: none;">
+          <h4>Select transcation</h4>
+          <div class="trans">
+          <div class="tra"><input type="radio" name = "transaction" id="checkBalance"> Check Account Balance</div>
+          <div class="tra"><input type="radio" name = "transaction" id="withdraw" value="Male"> Withdraw</div>
+          <div class="tra"><input type="radio" name = "transaction" id="deposit" value="Male">Deposit</div>
+          <div class="tra"><input type="radio" name = "transaction" id="sign-out" value="Male"> Sign-out</div>
+        </div>
+        <div id="transactionMessage-ui">
+        
+        </div>
+  
+          <button>Submit</button>
+      </form>
+
+      <!-- <div id="transactionMessage-ui">
+        
+      </div> -->
+
+      <!-- <div id="exit-ui" style="display: none;">
+        Thank you for Banking with us, Sign-in if you want perform another Transcation
+      </div> -->
+
+      
+
+     
+</body>
+<script src="bank.js"></script>
+</html>
