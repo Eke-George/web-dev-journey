@@ -213,3 +213,21 @@ label{
     font-weight: bold;
     
 }
+.fish{
+    float: right;
+    width: 15%;
+    border: none;
+    background: rgb(14, 14, 83);
+    color: white;
+    height: auto;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer; 
+}
+#banned-ui{
+    color: red;
+    font-size: 30px;
+    font-weight: bolder;
+    /* line-height: 5px; */
+    letter-spacing: 2px;
+}
